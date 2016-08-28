@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "V_KLay", "V_KLay.vcproj", "{216AC369-216A-4E03-A2C0-385A938E7DC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Debug (no Unicode)
+		ConfigName.2 = Release
+		ConfigName.3 = Release (no Unicode)
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug.ActiveCfg = Debug|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug.Build.0 = Debug|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug (no Unicode).ActiveCfg = Debug (no Unicode)|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug (no Unicode).Build.0 = Debug (no Unicode)|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release.ActiveCfg = Release|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release.Build.0 = Release|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release (no Unicode).ActiveCfg = Release (no Unicode)|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release (no Unicode).Build.0 = Release (no Unicode)|Win32
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		Item:1 = !=- Language File Info =-!.cpp
+		Item:2 = data\Lang\bulgarian.h
+		Item:3 = data\Lang\catalan.h
+		Item:4 = data\Lang\chinese.h
+		Item:5 = data\Lang\chinese__simplified.h
+		Item:6 = data\Lang\Croatian.h
+		Item:7 = data\Lang\Czech.h
+		Item:8 = data\Lang\English.h
+		Item:9 = data\Lang\French.h
+		Item:10 = data\Lang\German.h
+		Item:11 = data\Lang\Greek.h
+		Item:12 = data\Lang\Hungarian.h
+		Item:13 = data\Lang\Italian.h
+		Item:14 = data\Lang\Polish.h
+		Item:15 = data\Lang\portuguese.h
+		Item:16 = data\Lang\Russian.h
+		Item:17 = data\Lang\serbian__cyrillic.h
+		Item:18 = data\Lang\Slovak.h
+		Item:19 = data\Lang\spanish.h
+		Item:20 = data\Lang\Ukrainian.h
+		Item:21 = data\Lang\vietnamese.h
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

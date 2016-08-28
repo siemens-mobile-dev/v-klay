@@ -1,0 +1,1036 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR_PATCH_PAGE ACCELERATORS 
+BEGIN
+    "W",            ID_PATCH_APPLY,         VIRTKEY, CONTROL, NOINVERT
+    "B",            ID_PATCH_DATA_BACKCOLOR, VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_PATCH_DATA_COMMENT,  VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_PATCH_DATA_FIND,     VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_PATCH_DATA_FONT,     VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_PATCH_DATA_PASTETEXT, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "V",            ID_PATCH_DATA_PASTE,    VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_PATCH_DATA_PASTE,    VIRTKEY, SHIFT, NOINVERT
+    "Z",            ID_PATCH_DATA_REDO,     VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "H",            ID_PATCH_DATA_REPLACE,  VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_PATCH_DATA_UNCOMMENT, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "U",            ID_PATCH_UNDO,          VIRTKEY, CONTROL, NOINVERT
+    "M",            IDC_PATCH_APPEND,       VIRTKEY, CONTROL, NOINVERT
+    "O",            IDC_PATCH_LOAD,         VIRTKEY, CONTROL, NOINVERT
+    "N",            IDC_PATCH_NEW,          VIRTKEY, CONTROL, NOINVERT
+    "S",            IDC_PATCH_SAVE,         VIRTKEY, CONTROL, NOINVERT
+    "D",            IDC_PATCH_SAVE_AS,      VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONSOLE_DIALOG DIALOGEX 0, 0, 380, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "V_KLay"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATUS_TEXT,7,7,366,26
+    EDITTEXT        IDC_TEXT,7,35,366,138,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONSOLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ukrainian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\V_KLay.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Ukrainian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS_DIALOG DIALOGEX 0, 0, 262, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Options..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,24,50,14
+    CONTROL         "Disable warning and success messages",
+                    IDC_WARNING_MSG_DISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,24,190,10
+    COMBOBOX        IDC_LANG,94,36,104,81,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_TOOL_EXTLAY_PATH_BROWSE,201,62,16,12,BS_FLAT
+    EDITTEXT        IDC_TOOL_EXTLAY_PATH,151,62,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TOOL_EXTPIC_PATH_BROWSE,201,76,16,12,BS_FLAT
+    EDITTEXT        IDC_TOOL_EXTPIC_PATH,151,76,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TOOL_EXTFNT_PATH_BROWSE,201,90,16,12,BS_FLAT
+    EDITTEXT        IDC_TOOL_EXTFNT_PATH,151,90,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TOOL_EXT1_PATH_BROWSE,201,104,16,12,BS_FLAT
+    EDITTEXT        IDC_TOOL_EXT1_PATH,151,104,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TOOL_EXT2_PATH_BROWSE,201,118,16,12,BS_FLAT
+    EDITTEXT        IDC_TOOL_EXT2_PATH,151,118,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TOOL_EXT3_PATH_BROWSE,201,133,16,12,BS_FLAT
+    EDITTEXT        IDC_TOOL_EXT3_PATH,151,133,50,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LOCALE,151,201,104,81,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "  General:",IDC_GENERAL_STATIC,7,7,190,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "Codepage of patch text:",IDC_PATCHER_CODEPAGE_STATIC,7,
+                    202,142,8
+    LTEXT           "  Patcher Tab:",IDC_PATCHER_TAB_STATIC,7,168,248,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "Language of interface:",IDC_LANG_STATIC,7,38,83,8
+    LTEXT           "Author of translation:",IDC_LANG_AUTHOR_STATIC,7,50,83,
+                    8
+    EDITTEXT        IDC_LANG_AUTHOR,94,50,161,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "External editor of keyboard latouts:",
+                    IDC_TOOL_EXTLAY_PATH_STATIC,7,64,143,8
+    LTEXT           "External editor of phone pictures:",
+                    IDC_TOOL_EXTPIC_PATH_STATIC,7,78,143,8
+    LTEXT           "External tool #1:",IDC_TOOL_EXT1_PATH_STATIC,7,106,143,
+                    8
+    LTEXT           "External tool #2:",IDC_TOOL_EXT2_PATH_STATIC,7,120,143,
+                    8
+    LTEXT           "External tool #3:",IDC_TOOL_EXT3_PATH_STATIC,7,135,143,
+                    8
+    LTEXT           "External editor of phone fonts:",
+                    IDC_TOOL_EXTFNT_PATH_STATIC,7,92,143,8
+    PUSHBUTTON      "Advanced...",IDC_OPTIONS_ADVANCED,101,8,95,12,BS_FLAT
+    LTEXT           "Font size of patch text:",IDC_PATCHER_FONT_SIZE_STATIC,
+                    7,188,142,8
+    EDITTEXT        IDC_PATCHER_FONT_SIZE,151,186,44,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_PATCHER_FONT_SIZE_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,196,186,11,11
+    PUSHBUTTON      "...",IDC_TOOL_TMP_PATH_BROWSE,239,148,16,12,BS_FLAT
+    EDITTEXT        IDC_TOOL_TMP_PATH,151,148,88,12,ES_AUTOHSCROLL
+    LTEXT           "Temporary folder for fullflash and patches:",
+                    IDC_TOOL_TMP_PATH_STATIC,7,150,143,8
+    CONTROL         "Disable warning about saving in RTF",
+                    IDC_RTF_WARNING_MSG_DISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,214,248,10
+    EDITTEXT        IDC_TOOL_EXTLAY_ARG,218,62,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXTLAY_ARG_INS,247,62,8,12,BS_ICON | 
+                    BS_FLAT
+    EDITTEXT        IDC_TOOL_EXTPIC_ARG,218,76,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXTPIC_ARG_INS,247,76,8,12,BS_ICON | 
+                    BS_FLAT
+    EDITTEXT        IDC_TOOL_EXTFNT_ARG,218,90,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXTFNT_ARG_INS,247,90,8,12,BS_ICON | 
+                    BS_FLAT
+    EDITTEXT        IDC_TOOL_EXT1_ARG,218,104,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXT1_ARG_INS,247,104,8,12,BS_ICON | 
+                    BS_FLAT
+    EDITTEXT        IDC_TOOL_EXT2_ARG,218,118,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXT2_ARG_INS,247,118,8,12,BS_ICON | 
+                    BS_FLAT
+    EDITTEXT        IDC_TOOL_EXT3_ARG,218,133,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXT3_ARG_INS,247,133,8,12,BS_ICON | 
+                    BS_FLAT
+    CONTROL         "Swap key conbinations for ""Paste"" and ""Paste Text""",
+                    IDC_PASTE_KEYS_SWAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,224,248,10
+END
+
+CG_IDD_PROGRESS DIALOGEX 0, 0, 380, 41
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "V_KLay"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Please wait...",CG_IDC_PROGDLG_STATUS,7,3,366,16,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "Cancel",IDCANCEL,323,20,50,14
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    WS_BORDER,7,25,307,9
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 319, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About V_KLay"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Help",IDC_HELPWND,262,27,50,16
+    PUSHBUTTON      " web",IDC_WEB,68,32,186,11
+    PUSHBUTTON      "e-mail",IDC_EMAIL,68,43,186,11
+    DEFPUSHBUTTON   "OK",IDOK,262,6,50,16,WS_GROUP
+    ICON            IDI_VKLAY,IDC_V_ICON,11,17,20,20
+    LTEXT           "V_KLay Version X.X.X\nCopyright (C) 2002-2004 Valeriy V. Vishnyak\nUkraine, Kyiv",
+                    IDC_ABOUT_TEXT,40,6,149,26,SS_NOPREFIX
+    LTEXT           "  Program for patching Flash and changing the keyboard layouts in mobile phones.\n\n   English localization:\n     Igs\n     sl45@hotbox.ru\n     http://mobile-sl45.narod.ru",
+                    IDC_DESCRIPTION_TEXT,40,56,272,75,0,WS_EX_STATICEDGE
+    LTEXT           "e-mail:",IDC_EMAIL_TEXT,40,44,25,8
+    LTEXT           "web:",IDC_WEB_TEXT,40,34,25,8
+END
+
+IDD_V_KLAY_DIALOG DIALOGEX 0, 0, 394, 270
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "V_KLay"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "donate",IDC_DONATE_LINK,352,263,32,9,NOT WS_TABSTOP
+    RTEXT           ".::",IDC_RESIZE_MARKER_STATIC,385,262,8,10,WS_DISABLED
+    RTEXT           ".",IDC_RESIZE_MARKER2_STATIC,388,257,5,8,WS_DISABLED
+    LTEXT           "  Work with:",IDC_WORKWITH_STATIC,7,7,213,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CONTROL         "Phone",IDC_SELECT_PHONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,64,8,62,12
+    CONTROL         "File with part of Flash",IDC_SELECT_FILE,"Button",
+                    BS_AUTORADIOBUTTON,127,8,92,12
+    COMBOBOX        IDC_PHONES_LIST,7,23,116,104,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PHONE_PORTS_LIST,154,23,48,70,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FLASH_FNAME,7,23,108,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "...",IDC_FLASH_BROWSE,116,23,18,12,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    COMBOBOX        IDC_FLASH_FROM,183,23,62,120,CBS_DROPDOWN | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FLASH_SIZE,277,23,50,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "WARNING!  Ensure, that the begining of loaded Flash part is in the ""From address"" box!",
+                    IDC_FLASH_FILE_TEXT,7,36,326,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    RTEXT           "From address:",IDC_FLASH_FROM_TEXT,135,25,47,8,NOT 
+                    WS_VISIBLE | WS_DISABLED | NOT WS_GROUP
+    RTEXT           "Size:",IDC_FLASH_SIZE_TEXT,248,25,28,8,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_GROUP
+    RTEXT           "Port:",IDC_PHONE_PORTS_LIST_TEXT,124,25,29,8,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_PHONE_BAUDS_LIST,243,23,48,70,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Baud:",IDC_PHONE_BAUDS_LIST_TEXT,202,25,40,8,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Turn ON",IDC_PHONE_RESET,312,23,15,13,BS_ICON | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Refresh ->",IDC_PHONE_QUERY_INFO,7,36,50,9,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_PHONE_FLASH_INFO,61,36,266,10,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | WS_DISABLED | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    PUSHBUTTON      "Options",ID_OPTIONS,337,26,36,16
+    CONTROL         "",IDC_TAB,"SysTabControl32",WS_TABSTOP,7,48,380,215,
+                    WS_EX_ACCEPTFILES
+    PUSHBUTTON      "?",ID_ABOUT,376,26,11,16
+    PUSHBUTTON      "Exit",IDCANCEL,337,7,50,16
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXTLAY,223,7,16,14,BS_ICON | BS_FLAT
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXTPIC,239,7,16,14,BS_ICON | BS_FLAT
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXTFNT,255,7,16,14,BS_ICON | BS_FLAT
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXT1,271,7,16,14,BS_ICON | BS_FLAT
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXT2,287,7,16,14,BS_ICON | BS_FLAT
+    PUSHBUTTON      "ExtLay",IDC_TOOL_EXT3,303,7,16,14,BS_ICON | BS_FLAT
+    PUSHBUTTON      "ExtLay",IDC_TOOLS_OPTIONS,319,7,8,14,BS_ICON | BS_FLAT
+    CONTROL         "",IDC_PHONE_LDRSTATE,"Static",SS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED,294,23,15,13,WS_EX_STATICEDGE
+    EDITTEXT        IDC_DONATE_DETAILS,7,263,338,10,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | WS_DISABLED | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_LAYOUT_PROPPAGE DIALOGEX 0, 0, 376, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "  INI File:",IDC_INI_TITLE_STATIC,7,7,362,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    COMBOBOX        IDC_INI_PHONE,68,7,95,84,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_INI_NAME,163,7,205,84,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Load layout from Flash",ID_FLASH_LOAD,7,46,80,15
+    PUSHBUTTON      "Write Layout to Flash",ID_UPDATE,95,46,80,15
+    PUSHBUTTON      "Open Layout File...",IDC_KEYS_LOAD,331,46,16,15,BS_ICON
+    PUSHBUTTON      "Save Layout File...",IDC_KEYS_SAVE,353,46,16,15,BS_ICON
+    EDITTEXT        IDC_BIG_KEY1,16,76,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY1,67,76,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY1,16,89,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY1,67,89,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY2,130,76,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY2,181,76,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY2,130,89,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY2,181,89,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY3,248,76,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY3,299,76,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY3,248,89,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY3,299,89,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY4,16,106,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY4,67,106,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY4,16,119,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY4,67,119,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY5,130,106,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY5,181,106,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY5,130,119,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY5,181,119,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY6,248,106,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY6,299,106,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY6,248,119,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY6,299,119,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY7,16,136,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY7,67,136,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY7,16,149,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY7,67,149,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY8,130,136,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY8,181,136,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY8,130,149,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY8,181,149,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY9,248,136,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY9,299,136,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY9,248,149,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY9,299,149,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEYS,16,166,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEYS,67,166,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEYS,16,179,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEYS,67,179,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEY0,130,166,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEY0,181,166,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEY0,130,179,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEY0,181,179,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BIG_KEYG,248,166,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_BIG_CODE_KEYG,299,166,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_KEYG,248,179,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_SMALL_CODE_KEYG,299,179,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CTEXT           "1",IDC_TEXT_KEY1,7,76,8,24,SS_CENTERIMAGE
+    CTEXT           "2",IDC_TEXT_KEY2,121,76,8,24,SS_CENTERIMAGE
+    CTEXT           "3",IDC_TEXT_KEY3,239,76,8,24,SS_CENTERIMAGE
+    CTEXT           "Symbols",IDC_SYMBOLS1_STATIC,16,67,50,8
+    CTEXT           "Codes",IDC_CODES1_STATIC,66,67,50,8
+    CTEXT           "Symbols",IDC_SYMBOLS2_STATIC,130,67,50,8
+    CTEXT           "Codes",IDC_CODES2_STATIC,180,67,50,8
+    CTEXT           "Symbols",IDC_SYMBOLS3_STATIC,247,67,50,8
+    CTEXT           "Codes",IDC_CODES3_STATIC,297,67,50,8
+    LTEXT           "Big",IDC_BIG1_STATIC,352,76,17,12,SS_CENTERIMAGE
+    LTEXT           "Small",IDC_SMALL1_STATIC,352,89,17,12,SS_CENTERIMAGE
+    CTEXT           "4",IDC_TEXT_KEY4,7,106,8,24,SS_CENTERIMAGE
+    CTEXT           "5",IDC_TEXT_KEY5,121,106,8,24,SS_CENTERIMAGE
+    CTEXT           "6",IDC_TEXT_KEY6,239,106,8,24,SS_CENTERIMAGE
+    LTEXT           "Big",IDC_BIG2_STATIC,352,106,17,12,SS_CENTERIMAGE
+    LTEXT           "Small",IDC_SMALL2_STATIC,352,118,17,12,SS_CENTERIMAGE
+    CTEXT           "7",IDC_TEXT_KEY7,7,136,8,24,SS_CENTERIMAGE
+    CTEXT           "8",IDC_TEXT_KEY8,121,136,8,24,SS_CENTERIMAGE
+    CTEXT           "9",IDC_TEXT_KEY9,239,136,8,24,SS_CENTERIMAGE
+    LTEXT           "Big",IDC_BIG3_STATIC,352,136,17,12,SS_CENTERIMAGE
+    LTEXT           "Small",IDC_SMALL3_STATIC,352,149,17,12,SS_CENTERIMAGE
+    CTEXT           "*",IDC_TEXT_KEYS,7,166,8,24,SS_CENTERIMAGE
+    CTEXT           "0",IDC_TEXT_KEY0,121,166,8,24,SS_CENTERIMAGE
+    CTEXT           "#",IDC_TEXT_KEYG,239,166,8,24,SS_CENTERIMAGE
+    LTEXT           "Big",IDC_BIG4_STATIC,352,166,17,12,SS_CENTERIMAGE
+    LTEXT           "Small",IDC_SMALL4_STATIC,352,179,17,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_INI_COMMENTS,67,29,302,11,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    LTEXT           "Author:",IDC_INI_AUTHOR_STATIC,7,21,57,8
+    EDITTEXT        IDC_INI_AUTHOR,7,29,57,11,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Comments:",IDC_INI_COMMENTS_STATIC,67,21,302,8
+END
+
+IDD_PATCH_PROPPAGE DIALOGEX 0, 0, 376, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PATCH_DATA,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | 
+                    ES_WANTRETURN | ES_NUMBER | WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,7,40,362,152
+    PUSHBUTTON      "Apply Patch",ID_PATCH_APPLY,7,7,80,15
+    PUSHBUTTON      "?",ID_PATCH_APPLY_TEST,87,7,12,15
+    PUSHBUTTON      "Undo Patch",ID_PATCH_UNDO,109,7,80,15
+    PUSHBUTTON      "?",ID_PATCH_UNDO_TEST,189,7,12,15
+    PUSHBUTTON      "New",IDC_PATCH_NEW,244,7,16,15,BS_ICON
+    PUSHBUTTON      "Open...",IDC_PATCH_LOAD,266,7,16,15,BS_ICON
+    PUSHBUTTON      "Open...",IDC_PATCH_APPEND,310,7,16,15,BS_ICON
+    PUSHBUTTON      "Save...",IDC_PATCH_SAVE,332,7,16,15,BS_ICON
+    PUSHBUTTON      "Save...",IDC_PATCH_SAVE_AS,354,7,16,15,BS_ICON
+    LTEXT           "  Patch data in format: _ADDRESS_: [_OLD_DATA_] _NEW_DATA_",
+                    IDC_DATA_FORMAT_STATIC,7,30,233,8
+    RTEXT           "0 ",IDC_CUR_LINE,276,29,25,10,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "Line:",IDC_LINE_STATIC,240,29,34,10,SS_CENTERIMAGE
+    RTEXT           "0 ",IDC_CUR_COL,344,29,25,10,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "Column:",IDC_COLUMN_STATIC,303,29,39,10,SS_CENTERIMAGE
+    PUSHBUTTON      "Open...",IDC_PATCH_RELOAD,288,7,16,15,BS_ICON | 
+                    WS_DISABLED
+END
+
+IDD_FLASHER_PROPPAGE DIALOGEX 0, 0, 376, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_FLASHER_FROM,81,24,100,70,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FLASHER_SIZE,258,24,100,70,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "  Buffer of the program:",IDC_BUFFER_STATIC,7,43,362,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    COMBOBOX        IDC_BUFFER_OFFSET,81,60,100,70,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BUFFER_SIZE,258,60,100,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_BUFFER_LAST_FROM,258,82,100,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "View / Edit ...",IDC_BUFFER_VIEW,258,44,110,12,BS_FLAT
+    PUSHBUTTON      "Read Memory",ID_FLASHER_MEMORY_LOAD,7,117,111,15
+    PUSHBUTTON      "Save File ...",IDC_FLASHER_FILE_WRITE,7,135,111,15
+    PUSHBUTTON      "Open File ...",IDC_FLASHER_FILE_LOAD,7,159,111,15
+    PUSHBUTTON      "Write Memory",ID_FLASHER_MEMORY_WRITE,7,177,111,15
+    PUSHBUTTON      "Memory Map",IDC_FLASHER_MEMORY_MAP,132,117,111,15
+    PUSHBUTTON      "Restore Bootcore",IDC_FLASHER_MEMORY_RESTORE_BOOTCORE,
+                    132,177,111,15,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "  Memory of the phone:",IDC_MEMORY_STATIC,7,7,362,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    RTEXT           "From Address:",IDC_FROM_STATIC,0,26,79,8,SS_CENTERIMAGE
+    RTEXT           "Size:",IDC_MEMORY_SIZE_STATIC,185,26,70,8,
+                    SS_CENTERIMAGE
+    LTEXT           "  Operations:",IDC_OPERATIONS_STATIC,7,101,362,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    RTEXT           "Use From Offset:",IDC_BUFFER_OFFSET_STATIC,0,62,79,8,
+                    SS_CENTERIMAGE
+    RTEXT           "Size:",IDC_BUFFER_SIZE_STATIC,185,62,70,8,
+                    SS_CENTERIMAGE
+    LTEXT           "  Note: Offset - works only with ""Write Memory"" operation.",
+                    IDC_BUFFER_NOTE_STATIC,7,73,362,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,125,117,1,75
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,250,117,1,75
+    RTEXT           "Last accessed memory of phone address:",
+                    IDC_BUFFER_LAST_FROM_STATIC,7,84,248,8,SS_CENTERIMAGE
+END
+
+IDD_OPTIONS_ADVANCED_DIALOG DIALOGEX 0, 0, 262, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Advanced options..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,24,50,14
+    CONTROL         "Work with COM port in simple mode (NON OVERLAPPED)",
+                    IDC_COM_SIMPLE_MODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,77,248,10
+    GROUPBOX        "Autoignition Type",IDC_AUTOIGN_TYPE_TEXT,13,97,242,45,
+                    WS_TABSTOP
+    CONTROL         "Disable Autoignition",IDC_AUTOIGN_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,87,248,10
+    CONTROL         "Autodetect",IDC_AUTOIGN_AUTO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,19,108,234,8
+    CONTROL         "Simple (at begin set ""+12V"" on DTR)",
+                    IDC_AUTOIGN_SIMPL,"Button",BS_AUTORADIOBUTTON,19,118,234,
+                    8
+    CONTROL         "Original Siemens (on DTR: 2 sec +12V, -12V (ignition), +12V)",
+                    IDC_AUTOIGN_ORIGSIE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,19,128,234,8
+    LTEXT           "  For advanced users:",IDC_ADVUSER_STATIC,7,160,248,14,
+                    SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LTEXT           "   WARNING!  Changing this options may limiting some functionality of program or lead to stop responding of program in some situation.\n Try to change this options ONLY if program is not working with its default values.",
+                    IDC_COMPATIBILITY_WARN,7,24,190,51
+    LTEXT           "  Compatibility options:",IDC_COMPATIBILITY_STATIC,7,7,
+                    190,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CONTROL         "Do not abort operation on 'Cancel' in 'Save Repair Patch As...' dialog.",
+                    IDC_ADVUSER_IGNORE_CANCEL_REPAIR_PATCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,176,248,10
+    CONTROL         "Do not check existence of old (when apply patch) or new (when undo) data in the phone. Ignore all errors!",
+                    IDC_ADVUSER_IGNORE_NO_OLD,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,7,186,248,16
+    CONTROL         "Generate minimum amount of comments in repair patch.",
+                    IDC_ADVUSER_REPAIR_PATCH_TEXT_SIMPLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,202,248,10
+    CONTROL         "RTS",IDC_COM_RTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,144,115,10
+    CONTROL         "DTR",IDC_COM_DTR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    131,144,124,9
+    CONTROL         "Enable writing in bootcore of phones.",
+                    IDC_ADVUSER_ENBLE_BOOTCORE_WRITING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,212,248,10
+END
+
+IDD_FINDDLG DIALOGEX 30, 73, 320, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CONTEXTHELP | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_FINDDLG_FIND_WHAT_TEXT,4,8,42,8
+    EDITTEXT        1152,47,7,200,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &whole word only",1040,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,4,26,138,12
+    CONTROL         "Match &case",1041,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    4,42,138,12
+    GROUPBOX        "Direction",1072,145,26,102,28,WS_GROUP
+    CONTROL         "&Up",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP,151,38,
+                    45,12
+    CONTROL         "&Down",1057,"Button",BS_AUTORADIOBUTTON,198,38,47,12
+    DEFPUSHBUTTON   "&Find Next",IDOK,254,5,62,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,254,23,62,14
+    PUSHBUTTON      "&Help",1038,254,45,62,14
+END
+
+IDD_REPLACEDLG DIALOGEX 36, 44, 320, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CONTEXTHELP | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Fi&nd what:",IDC_REPLACEDLG_FIND_WHAT_TEXT,4,9,48,8
+    EDITTEXT        1152,54,7,192,12,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Re&place with:",IDC_REPLACEDLG_REPLACE_WITH_TEXT,4,26,
+                    48,8
+    EDITTEXT        1153,54,24,192,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Match &whole word only",1040,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,5,46,241,12
+    CONTROL         "Match &case",1041,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    5,62,241,12
+    DEFPUSHBUTTON   "&Find Next",IDOK,252,4,62,14,WS_GROUP
+    PUSHBUTTON      "&Replace",1024,252,21,62,14
+    PUSHBUTTON      "Replace &All",1025,252,38,62,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,55,62,14
+    PUSHBUTTON      "&Help",1038,252,75,62,14
+END
+
+IDD_HEX_VIEW_DIALOG DIALOGEX 0, 0, 394, 270
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "HEX View"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_HEX_EDIT,6,6,382,258,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPTIONS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    CG_IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_V_KLAY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_LAYOUT_PROPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_FLASHER_PROPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        VERTGUIDE, 118
+        VERTGUIDE, 132
+        VERTGUIDE, 243
+        VERTGUIDE, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_OPTIONS_ADVANCED_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_REPLACEDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 314
+    END
+
+    IDD_HEX_VIEW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 388
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 264
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_VKLAY               ICON                    "res\\V-Klay_xp.ico"
+IDI_VKLAY_FILES         ICON                    "res\\V-Klay_files_xp.ico"
+IDI_VKLAY_FOLDER        ICON                    "res\\My_V_Klay_Patches.ico"
+IDI_VKLAY_SETUP         ICON                    "res\\V_Klay_Setup.ico"
+IDI_TOOLS_OPTIONS       ICON                    "res\\icon1.ico"
+IDI_TOOL_EXT1           ICON                    "res\\tool_ext.ico"
+IDI_TOOL_EXTPIC         ICON                    "res\\spc2.ico"
+IDI_TOOL_EXTLAY         ICON                    "res\\ico00003.ico"
+IDI_TOOL_EXT2           ICON                    "res\\ico00001.ico"
+IDI_TOOL_EXT3           ICON                    "res\\ico00002.ico"
+IDI_TOOL_EXTFNT         ICON                    "res\\siece.ico"
+IDI_OPEN                ICON                    "res\\ico00004.ico"
+IDI_NEW                 ICON                    "res\\open1.ico"
+IDI_SAVE                ICON                    "res\\new1.ico"
+IDI_APPEND              ICON                    "res\\new2.ico"
+IDI_RESET               ICON                    "res\\ico00005.ico"
+IDI_SAVE_AS             ICON                    "res\\save1.ico"
+IDI_REOPEN              ICON                    "res\\ico00006.ico"
+IDI_TOOL_EXTFFED        ICON                    "res\\smelter.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,3,0,0
+ PRODUCTVERSION 0,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Program for patching Flash and changing the keyboard layouts in mobile phones."
+            VALUE "CompanyName", "Vi-Soft"
+            VALUE "FileDescription", "V_KLay program"
+            VALUE "FileVersion", "3, 3, 0, 0"
+            VALUE "InternalName", "V_KLay.exe"
+            VALUE "LegalCopyright", "(c) 2002-2005 Valeriy V. Vishnyak.  All rights reserved."
+            VALUE "OriginalFilename", "V_KLay.exe"
+            VALUE "ProductName", "V_KLay"
+            VALUE "ProductVersion", "0, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\V_KLay.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_V_KLAY_DIALOG DLGINIT
+BEGIN
+    IDC_PHONES_LIST, 0x403, 5, 0
+0x4c53, 0x7834, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_PHONE_PORTS_LIST, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x302d, 0x4378, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x302d, 0x4178, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x302d, 0x3878, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x302d, 0x3478, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x302d, 0x3278, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x3020, 0x3078, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x3020, 0x3278, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x3020, 0x3478, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x3020, 0x3878, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x3020, 0x4178, 0x3030, 0x3030, 0x0030, 
+    IDC_FLASH_FROM, 0x403, 10, 0
+0x3020, 0x4378, 0x3030, 0x3030, 0x0030, 
+    IDC_PHONE_BAUDS_LIST, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_PHONE_BAUDS_LIST, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_PHONE_BAUDS_LIST, 0x403, 7, 0
+0x3332, 0x3430, 0x3030, "\000" 
+    IDC_PHONE_BAUDS_LIST, 0x403, 7, 0
+0x3634, 0x3830, 0x3030, "\000" 
+    IDC_PHONE_BAUDS_LIST, 0x403, 7, 0
+0x3239, 0x3631, 0x3030, "\000" 
+    IDC_PHONE_BAUDS_LIST, 0x403, 8, 0
+0x3231, 0x3832, 0x3038, 0x0030, 
+    IDC_PHONE_BAUDS_LIST, 0x403, 8, 0
+0x3631, 0x3030, 0x3030, 0x0030, 
+    0
+END
+
+IDD_OPTIONS_DIALOG DLGINIT
+BEGIN
+    IDC_LOCALE, 0x403, 8, 0
+0x6863, 0x6e69, 0x7365, 0x0065, 
+    IDC_LOCALE, 0x403, 19, 0
+0x6863, 0x6e69, 0x7365, 0x2d65, 0x6973, 0x706d, 0x696c, 0x6966, 0x6465, 
+"\000" 
+    IDC_LOCALE, 0x403, 20, 0
+0x6863, 0x6e69, 0x7365, 0x2d65, 0x7274, 0x6461, 0x7469, 0x6f69, 0x616e, 
+0x006c, 
+    IDC_LOCALE, 0x403, 6, 0
+0x7a63, 0x6365, 0x0068, 
+    IDC_LOCALE, 0x403, 7, 0
+0x6164, 0x696e, 0x6873, "\000" 
+    IDC_LOCALE, 0x403, 6, 0
+0x7564, 0x6374, 0x0068, 
+    IDC_LOCALE, 0x403, 8, 0
+0x6562, 0x676c, 0x6169, 0x006e, 
+    IDC_LOCALE, 0x403, 8, 0
+0x6e65, 0x6c67, 0x7369, 0x0068, 
+    IDC_LOCALE, 0x403, 12, 0
+0x6e65, 0x6c67, 0x7369, 0x2d68, 0x7561, 0x0073, 
+    IDC_LOCALE, 0x403, 12, 0
+0x6e65, 0x6c67, 0x7369, 0x2d68, 0x6163, 0x006e, 
+    IDC_LOCALE, 0x403, 11, 0
+0x6e65, 0x6c67, 0x7369, 0x2d68, 0x7a6e, "\000" 
+    IDC_LOCALE, 0x403, 11, 0
+0x6e65, 0x6c67, 0x7369, 0x2d68, 0x6b75, "\000" 
+    IDC_LOCALE, 0x403, 12, 0
+0x6e65, 0x6c67, 0x7369, 0x2d68, 0x7375, 0x0061, 
+    IDC_LOCALE, 0x403, 8, 0
+0x6966, 0x6e6e, 0x7369, 0x0068, 
+    IDC_LOCALE, 0x403, 7, 0
+0x7266, 0x6e65, 0x6863, "\000" 
+    IDC_LOCALE, 0x403, 15, 0
+0x7266, 0x6e65, 0x6863, 0x622d, 0x6c65, 0x6967, 0x6e61, "\000" 
+    IDC_LOCALE, 0x403, 16, 0
+0x7266, 0x6e65, 0x6863, 0x632d, 0x6e61, 0x6461, 0x6169, 0x006e, 
+    IDC_LOCALE, 0x403, 13, 0
+0x7266, 0x6e65, 0x6863, 0x732d, 0x6977, 0x7373, "\000" 
+    IDC_LOCALE, 0x403, 7, 0
+0x6567, 0x6d72, 0x6e61, "\000" 
+    IDC_LOCALE, 0x403, 16, 0
+0x6567, 0x6d72, 0x6e61, 0x612d, 0x7375, 0x7274, 0x6169, 0x006e, 
+    IDC_LOCALE, 0x403, 13, 0
+0x6567, 0x6d72, 0x6e61, 0x732d, 0x6977, 0x7373, "\000" 
+    IDC_LOCALE, 0x403, 6, 0
+0x7267, 0x6565, 0x006b, 
+    IDC_LOCALE, 0x403, 10, 0
+0x7568, 0x676e, 0x7261, 0x6169, 0x006e, 
+    IDC_LOCALE, 0x403, 10, 0
+0x6369, 0x6c65, 0x6e61, 0x6964, 0x0063, 
+    IDC_LOCALE, 0x403, 8, 0
+0x7469, 0x6c61, 0x6169, 0x006e, 
+    IDC_LOCALE, 0x403, 14, 0
+0x7469, 0x6c61, 0x6169, 0x2d6e, 0x7773, 0x7369, 0x0073, 
+    IDC_LOCALE, 0x403, 9, 0
+0x616a, 0x6170, 0x656e, 0x6573, "\000" 
+    IDC_LOCALE, 0x403, 7, 0
+0x6f6b, 0x6572, 0x6e61, "\000" 
+    IDC_LOCALE, 0x403, 10, 0
+0x6f6e, 0x7772, 0x6765, 0x6169, 0x006e, 
+    IDC_LOCALE, 0x403, 17, 0
+0x6f6e, 0x7772, 0x6765, 0x6169, 0x2d6e, 0x6f62, 0x6d6b, 0x6c61, "\000" 
+    IDC_LOCALE, 0x403, 18, 0
+0x6f6e, 0x7772, 0x6765, 0x6169, 0x2d6e, 0x796e, 0x6f6e, 0x7372, 0x006b, 
+
+    IDC_LOCALE, 0x403, 7, 0
+0x6f70, 0x696c, 0x6873, "\000" 
+    IDC_LOCALE, 0x403, 11, 0
+0x6f70, 0x7472, 0x6775, 0x6575, 0x6573, "\000" 
+    IDC_LOCALE, 0x403, 18, 0
+0x6f70, 0x7472, 0x6775, 0x6575, 0x6573, 0x622d, 0x6172, 0x697a, 0x006c, 
+
+    IDC_LOCALE, 0x403, 8, 0
+0x7572, 0x7373, 0x6169, 0x006e, 
+    IDC_LOCALE, 0x403, 7, 0
+0x6c73, 0x766f, 0x6b61, "\000" 
+    IDC_LOCALE, 0x403, 8, 0
+0x7073, 0x6e61, 0x7369, 0x0068, 
+    IDC_LOCALE, 0x403, 16, 0
+0x7073, 0x6e61, 0x7369, 0x2d68, 0x656d, 0x6978, 0x6163, 0x006e, 
+    IDC_LOCALE, 0x403, 15, 0
+0x7073, 0x6e61, 0x7369, 0x2d68, 0x6f6d, 0x6564, 0x6e72, "\000" 
+    IDC_LOCALE, 0x403, 8, 0
+0x7773, 0x6465, 0x7369, 0x0068, 
+    IDC_LOCALE, 0x403, 8, 0
+0x7574, 0x6b72, 0x7369, 0x0068, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PATCH_MENU MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_PATCH_DATA_UNDO
+        MENUITEM "&Redo\tCtrl+Shift+Z",         ID_PATCH_DATA_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_PATCH_DATA_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_PATCH_DATA_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_PATCH_DATA_PASTE
+        MENUITEM "Paste &Text\tCtrl+Shift+V",   ID_PATCH_DATA_PASTETEXT
+        MENUITEM "&Delete\tDel",                ID_PATCH_DATA_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_PATCH_DATA_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Font...\tCtrl+G",            ID_PATCH_DATA_FONT
+        MENUITEM "&Back Color...\tCtrl+B",      ID_PATCH_DATA_BACKCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "Find...\tCtrl+F",             174
+        MENUITEM "Replace...\tCtrl+H",          ID_PATCH_DATA_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Comment\tCtrl+K",             ID_PATCH_DATA_COMMENT
+        MENUITEM "Uncomment\tCtrl+Shift+K",     ID_PATCH_DATA_UNCOMMENT
+    END
+END
+
+IDR_TOOLS_OPTIONS_MENU MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "1",                           ID_TOOLS_READFF
+        MENUITEM "2",                           ID_TOOLS_USEFF
+        MENUITEM "3",                           ID_TOOLS_ONLY_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "opt...",                      ID_TOOLS_SHOW_OPTIONS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING144           "str"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\V_KLay.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

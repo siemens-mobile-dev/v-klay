@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: V_Klay - Win32 NO UNICODE Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Valera\LOCALS~1\Temp\RSP1B7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"NO_UNICODE_Release6/V_Klay.pch" /Yu"stdafx.h" /Fo"NO_UNICODE_Release6/" /Fd"NO_UNICODE_Release6/" /FD /c 
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\FlasherPage.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\KlayDlg.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\LayoutPage.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\MlsPrgMsg.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\OptionsDlg.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\PatchPage.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\ProgressDlg.CPP"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\V_Klay.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\VDevice.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\VDeviceFile.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\VDevicePhone.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\VKey.cpp"
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\VOptions.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Valera\LOCALS~1\Temp\RSP1B7.tmp" 
+Creating temporary file "C:\DOCUME~1\Valera\LOCALS~1\Temp\RSP1B8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"NO_UNICODE_Release6/V_Klay.pch" /Yc"stdafx.h" /Fo"NO_UNICODE_Release6/" /Fd"NO_UNICODE_Release6/" /FD /c 
+"D:\My\_Design_\V_KLay\Visual C++\V_KLay\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Valera\LOCALS~1\Temp\RSP1B8.tmp" 
+Creating temporary file "C:\DOCUME~1\Valera\LOCALS~1\Temp\RSP1B9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"NO_UNICODE_Release6/V_KLay9X.pdb" /machine:I386 /out:"V_KLay9X.exe" 
+".\NO_UNICODE_Release6\FlasherPage.obj"
+".\NO_UNICODE_Release6\KlayDlg.obj"
+".\NO_UNICODE_Release6\LayoutPage.obj"
+".\NO_UNICODE_Release6\MlsPrgMsg.obj"
+".\NO_UNICODE_Release6\OptionsDlg.obj"
+".\NO_UNICODE_Release6\PatchPage.obj"
+".\NO_UNICODE_Release6\ProgressDlg.obj"
+".\NO_UNICODE_Release6\StdAfx.obj"
+".\NO_UNICODE_Release6\V_Klay.obj"
+".\NO_UNICODE_Release6\VDevice.obj"
+".\NO_UNICODE_Release6\VDeviceFile.obj"
+".\NO_UNICODE_Release6\VDevicePhone.obj"
+".\NO_UNICODE_Release6\VKey.obj"
+".\NO_UNICODE_Release6\VOptions.obj"
+".\NO_UNICODE_Release6\V_Klay.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Valera\LOCALS~1\Temp\RSP1B9.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\MFC\INCLUDE\afxv_w32.h(119) : warning C4005: '_WIN32_WINDOWS' : macro redefinition
+        D:\My\_Design_\V_KLay\Visual C++\V_KLay\stdafx.h(26) : see previous definition of '_WIN32_WINDOWS'
+Compiling...
+FlasherPage.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\KlayDlg.h(9) : fatal error C1083: Cannot open include file: 'atltypes.h': No such file or directory
+KlayDlg.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\KLayDlg.h(9) : fatal error C1083: Cannot open include file: 'atltypes.h': No such file or directory
+LayoutPage.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\LayoutPage.h(19) : error C2976: 'CArray' : too few template arguments
+        C:\Program Files\Microsoft Visual Studio\VC98\MFC\INCLUDE\afxtempl.h(238) : see declaration of 'CArray'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\LayoutPage.h(25) : error C2079: 'm_Files' uses undefined class 'CArray<class CINIFileInfo>'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\LayoutPage.h(30) : error C2976: 'CArray' : too few template arguments
+        C:\Program Files\Microsoft Visual Studio\VC98\MFC\INCLUDE\afxtempl.h(238) : see declaration of 'CArray'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\LayoutPage.h(77) : error C2079: 'm_INIPhones' uses undefined class 'CArray<class CINIPhoneFiles>'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\KLayDlg.h(9) : fatal error C1083: Cannot open include file: 'atltypes.h': No such file or directory
+MlsPrgMsg.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\MlsPrgMsg.cpp(40) : error C2039: 'CPair' : is not a member of 'CMap<unsigned __int64,unsigned __int64,class CString,class CString &>'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\MlsPrgMsg.cpp(40) : error C2065: 'CPair' : undeclared identifier
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\MlsPrgMsg.cpp(40) : error C2065: 'pCurVal' : undeclared identifier
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\MlsPrgMsg.cpp(40) : error C2039: 'PLookup' : is not a member of 'CMap<unsigned __int64,unsigned __int64,class CString,class CString &>'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\MlsPrgMsg.cpp(43) : error C2227: left of '->value' must point to class/struct/union
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\MlsPrgMsg.cpp(167) : warning C4018: '<' : signed/unsigned mismatch
+OptionsDlg.cpp
+PatchPage.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\PatchPage.h(34) : error C2976: 'CArray' : too few template arguments
+        C:\Program Files\Microsoft Visual Studio\VC98\MFC\INCLUDE\afxtempl.h(238) : see declaration of 'CArray'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\KLayDlg.h(9) : fatal error C1083: Cannot open include file: 'atltypes.h': No such file or directory
+ProgressDlg.CPP
+V_Klay.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\KLayDlg.h(9) : fatal error C1083: Cannot open include file: 'atltypes.h': No such file or directory
+VDevice.cpp
+VDeviceFile.cpp
+VDevicePhone.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VDevicePhone.cpp(2027) : error C2039: 'Trim' : is not a member of 'CString'
+        C:\Program Files\Microsoft Visual Studio\VC98\MFC\INCLUDE\afx.h(368) : see declaration of 'CString'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VDevicePhone.cpp(2088) : error C2228: left of '.Find' must have class/struct/union type
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VDevicePhone.cpp(2126) : error C2228: left of '.Find' must have class/struct/union type
+VKey.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VKey.cpp(32) : error C2065: 'SetWindowLongPtr' : undeclared identifier
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VKey.cpp(32) : error C2065: 'LONG_PTR' : undeclared identifier
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VKey.cpp(32) : error C2143: syntax error : missing ')' before 'this'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VKey.cpp(32) : error C2059: syntax error : ')'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VKey.cpp(33) : error C2143: syntax error : missing ')' before 'this'
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\VKey.cpp(33) : error C2059: syntax error : ')'
+VOptions.cpp
+D:\My\_Design_\V_KLay\Visual C++\V_KLay\KLayDlg.h(9) : fatal error C1083: Cannot open include file: 'atltypes.h': No such file or directory
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+V_KLay9X.exe - 25 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

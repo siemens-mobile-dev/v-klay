@@ -1,0 +1,20 @@
+////////////////////////////////////////////////
+// V_KLay strings for encryption
+										 
+// CXRP="Af5v^.9bb;f@3"						   
+
+											   
+const char* cryptstrAbout1=_CXR("V_KLay Version %i.%i");
+const char* cryptstrAbout3=_CXR("\nCopyright (C) 2002-2005 Valeriy V. Vishnyak\nUkraine, Kyiv");
+
+const char* cryptstrSiteName=_CXR("www.vi-soft.com.ua");
+const char* cryptstrSiteURL=_CXR("http://www.vi-soft.com.ua");
+const char* cryptstrSiteTip=_CXR("Go to the V_KLay web page");
+const char* cryptstrMailName=_CXR("ValeraVi@mail.ru");
+const char* cryptstrMailURL=_CXR("http://www.vi-soft.com.ua");
+const char* cryptstrMailTip=_CXR("My E-Mail");
+
+const char* cryptstrDonateLinkName=_CXR("donate");
+const char* cryptstrDonateLinkURL=_CXR("http://www.vi-soft.com.ua/dn.php?n=donate");
+const char* cryptstrDonateLinkTip=_CXR("Like this program? You may donate money, to support developers.\r\nПонравилась программа? Можете поддержать разработчиков деньгами.");
+const char* cryptstrDonateDescr=_CXR("WMZ: Z663957027981 ( http://www.vi-soft.com.ua/dn.php?n=donate   ,   http://www.wmtransfer.com ), thanks.");

@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "V_KLay", "V_KLay.vcproj", "{216AC369-216A-4E03-A2C0-385A938E7DC4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug (no Unicode) = Debug (no Unicode)
+		Release = Release
+		Release (no Unicode) = Release (no Unicode)
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug.ActiveCfg = Debug|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug.Build.0 = Debug|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug (no Unicode).ActiveCfg = Debug (no Unicode)|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Debug (no Unicode).Build.0 = Debug (no Unicode)|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release.ActiveCfg = Release|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release.Build.0 = Release|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release (no Unicode).ActiveCfg = Release (no Unicode)|Win32
+		{216AC369-216A-4E03-A2C0-385A938E7DC4}.Release (no Unicode).Build.0 = Release (no Unicode)|Win32
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		data\Lang\bulgarian.h = data\Lang\bulgarian.h
+		data\Lang\catalan.h = data\Lang\catalan.h
+		data\Lang\chinese.h = data\Lang\chinese.h
+		data\Lang\chinese__simplified.h = data\Lang\chinese__simplified.h
+		data\Lang\Croatian.h = data\Lang\Croatian.h
+		data\Lang\Czech.h = data\Lang\Czech.h
+		data\Lang\English.h = data\Lang\English.h
+		data\Lang\French.h = data\Lang\French.h
+		data\Lang\German.h = data\Lang\German.h
+		data\Lang\Greek.h = data\Lang\Greek.h
+		data\Lang\Hungarian.h = data\Lang\Hungarian.h
+		data\Lang\Italian.h = data\Lang\Italian.h
+		data\Lang\Lithuanian.h = data\Lang\Lithuanian.h
+		data\Lang\Polish.h = data\Lang\Polish.h
+		data\Lang\portuguese.h = data\Lang\portuguese.h
+		data\Lang\Russian.h = data\Lang\Russian.h
+		data\Lang\serbian__cyrillic.h = data\Lang\serbian__cyrillic.h
+		data\Lang\Slovak.h = data\Lang\Slovak.h
+		data\Lang\spanish.h = data\Lang\spanish.h
+		data\Lang\Ukrainian.h = data\Lang\Ukrainian.h
+		data\Lang\vietnamese.h = data\Lang\vietnamese.h
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
